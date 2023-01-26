@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:posts_app/features/posts/domain/usecases/get_all_posts_usecase.dart';
 
+import '../../domain/usecases/get_all_posts_usecase.dart';
 import '../../domain/entities/post_entity.dart';
 
 class PostsList  {

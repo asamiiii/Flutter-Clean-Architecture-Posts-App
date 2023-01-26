@@ -7,11 +7,13 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //await di.init();
 
-      runApp(MyApp());
+      runApp(const MyApp());
     
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
    
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'Posts App',
             theme: appTheme,
-            home: PostsHomePage(),
+            home: const PostsHomePage(),
           )
     ;
   }

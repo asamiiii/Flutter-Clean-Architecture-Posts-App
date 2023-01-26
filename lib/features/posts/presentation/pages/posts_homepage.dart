@@ -5,9 +5,11 @@ import 'package:posts_app/features/posts/data/repositories/posts_repository_impl
 import 'package:posts_app/features/posts/domain/usecases/get_all_posts_usecase.dart';
 import 'package:posts_app/features/posts/presentation/widgets/posts_page/posts_list_widget.dart';
 import '../../domain/entities/post_entity.dart';
-import '../logic/posts_Logic.dart';
+import '../logic/posts_logic.dart';
 
 class PostsHomePage extends StatelessWidget {
+  const PostsHomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
